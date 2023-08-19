@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.he4966.test.mapper.TbAccountMapper">
+
+    <resultMap id="BaseResultMap" type="cn.he4966.test.domain.TbAccount">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="userName" column="user_name" jdbcType="VARCHAR"/>
+            <result property="age" column="age" jdbcType="INTEGER"/>
+            <result property="sex" column="sex" jdbcType="INTEGER"/>
+            <result property="birthday" column="birthday" jdbcType="TIMESTAMP"/>
+            <result property="options" column="options" jdbcType="VARCHAR"/>
+            <result property="isDelete" column="is_delete" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,user_name,age,
+        sex,birthday,options,
+        is_delete
+    </sql>
+</mapper>

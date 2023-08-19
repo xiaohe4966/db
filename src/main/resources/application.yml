@@ -1,0 +1,12 @@
+
+# 应用服务 WEB 访问端口
+server:
+  port: 8080
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/flex
+    username: root
+    password:
+#    url: jdbc:mysql://he4966.cn:3306/flex
+#    username: flex
+#    password: flex
